@@ -1,0 +1,82 @@
+body{
+    background-image: url(/images/background.gif);
+    background-repeat: repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: black;
+}
+  
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+
+.gif-navbar {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  width: 100%;
+  padding-top: 140px; 
+  z-index: 9;
+}
+
+/* navigation */
+.gif-navbar img,
+.nav-centerpiece img {
+  height: 200px;
+  width: 200px;
+  object-fit: contain;
+  display: block;
+  transition: filter 0.3s ease;
+}
+
+.gif-navbar img:hover,
+.nav-centerpiece img:hover {
+  filter: drop-shadow(0 0 6px rgb(255, 255, 255));
+  cursor: pointer;
+}
+
+
+.nav-centerpiece {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9;
+}
+
+@media (max-width: 600px) {
+  .gif-navbar img,
+  .nav-centerpiece img {
+    height: 60px;
+  }
+
+  .gif-navbar {
+    gap: 15px;
+  }
+
+}
+
+body {
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+body.fade-in {
+  opacity: 1;
+}
+
+body.fade-out {
+  opacity: 0;
+}
+
+

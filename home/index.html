@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <title>guhtguhtguht</title>
+    <link rel="stylesheet" href="/home/style.css">
+    <script defer src="/javascript/fade.js"></script>
+  </head>
+    <body>
+      <script>
+        document.addEventListener('DOMContentLoaded', () => {
+          const images = document.querySelectorAll('.hover-swap');
+      
+          images.forEach(img => {
+            const defaultSrc = img.dataset.default;
+            const hoverSrc = img.dataset.hover;
+      
+            img.addEventListener('mouseenter', () => {
+              img.src = hoverSrc;
+            });
+      
+            img.addEventListener('mouseleave', () => {
+              img.src = defaultSrc;
+            });
+          });
+        });
+      </script>      
+       <div class="nav-centerpiece">
+        <a href="/home/index.html">
+          <img 
+            src="/images/guht.gif" >
+        
+        </a>
+      </div>
+    
+      <nav class="gif-navbar">
+    
+      <a href="/shop/shop.html">
+        <img src="/images/shop.gif" alt="shopping">
+      </a>
+      <a href="/vision/vision.html">
+        <img src="/images/vision.gif" alt="da vision">
+      </a>
+    </nav>
+     </div>
+      <nav class="gif-navbar">
+        <a href="/signup/login.html">
+          <img src="/images/login.gif" alt="logging in">
+        </a>
+    </nav>
+    </body>
+      </div>
+    </nav>
+    
+    
+    
+</html>
+
